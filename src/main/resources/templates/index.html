@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="author" content="pan_junbiao的博客">
+</head>
+<body>
+<h1>首页</h1>
+<p>当前Session中保存的登录人名称：<span th:text="${session.userName}"/></p>
+<p>您好，欢迎访问 pan_junbiao的博客！</p>
+<p>博客地址：https://blog.csdn.net/pan_junbiao</p>
+<a href="logout" onclick="return confirm('确定注销吗？');">注销</a>
+</body>
+</html>
